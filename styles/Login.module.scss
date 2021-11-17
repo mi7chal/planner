@@ -1,0 +1,73 @@
+@import 'colors';
+@import 'components';
+
+.mainBox {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #e1e1e1;
+}
+.logo{
+  position:relative;
+  left:50%;
+  top:10%;
+  width:fit-content;
+  transform: translateX(-50%);
+
+}
+
+.loginBox {
+  width: 360px;
+  height: 370px;
+  position: relative;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: space-between;
+  padding: 50px 0px;
+  padding-bottom:10px;;
+  border-radius: 5px;
+  box-shadow: 0 1px 7px -2px rgb(170, 170, 170);
+}
+
+.loginInput {
+  outline: none;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  border-collapse: collapse;
+  padding: 15px;
+  width: 250px;
+  height: 40px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+}
+
+.loginInput:focus {
+  
+}
+
+
+.sendButton{
+  @include button;
+}
+
+.toLogin{
+  width:500px;
+  color:$lightRed;
+  text-align: center;
+  font-size:14px;
+  cursor:pointer;
+
+  &:hover{
+    text-decoration: underline;
+    
+  }
+}
+
+

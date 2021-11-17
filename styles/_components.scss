@@ -1,0 +1,32 @@
+@mixin button() {
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    border: 2px solid $mainRed;
+    color: $mainRed;
+    border-radius: 5px;
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        background: $mainRed;
+        color: #fff;
+    }
+}
+
+.blockSelect {
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    -khtml-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
